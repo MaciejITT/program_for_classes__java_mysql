@@ -104,7 +104,7 @@ class GetConnection {
     static String CONNECTION;
     
     public static Connection getConnection(){
-        USERNAME = "mwadas";
+        USERNAME = "root";
         PASSWORD = "password";
         CONNECTION = "jdbc:mysql://10.0.10.3:3306/fspwcho_baza";
     
@@ -113,6 +113,7 @@ class GetConnection {
             conn = DriverManager.getConnection(CONNECTION, USERNAME, PASSWORD);
             return conn;
         }catch(SQLException | ClassNotFoundException e){
+            e.printStackTrace();
         }
         return null;
     }
