@@ -108,8 +108,8 @@ class GetConnection {
     static String CONNECTION;
     
     public static Connection getConnection(){
-        USERNAME = "root";
-        PASSWORD = "password";
+        USERNAME = "mwadas";
+        PASSWORD = "abc123";
         CONNECTION = "jdbc:mysql://10.0.10.3:3306/fspwcho_baza";
     
         try {
