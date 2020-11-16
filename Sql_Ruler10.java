@@ -29,9 +29,13 @@ public class Sql_Ruler10 {
            System.out.println("Show tables - shows tables from database");
            System.out.println("You can use also SQL to insert,select data");
            statement = connection.createStatement();
+           System.out.println("--------------------------------------------------------------------");
            statement.executeUpdate("CREATE DATABASE IF NOT EXISTS fspwcho_baza;");
+           System.out.println("--------------------------------------------------------------------");
            statement.executeUpdate("use fspwcho_baza");
+           System.out.println("--------------------------------------------------------------------");
            statement.executeUpdate("create table if not exists user(nr_albumu varchar(50), f_name varchar(50), l_name varchar(50))");
+           System.out.println("--------------------------------------------------------------------");
        }
        catch( SQLException e ){
             System.out.println("Check your connection again.");
