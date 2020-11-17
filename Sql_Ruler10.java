@@ -110,7 +110,7 @@ class GetConnection {
     public static Connection getConnection(){
         USERNAME = "mwadas";
         PASSWORD = "abc123";
-        CONNECTION = "jdbc:mysql://10.0.0.3:3306/";
+        CONNECTION = "jdbc:mysql://10.0.0.3/";
     
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
